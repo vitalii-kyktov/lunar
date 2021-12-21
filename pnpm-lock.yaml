@@ -3,6 +3,7 @@ lockfileVersion: 5.3
 specifiers:
   '@babel/core': '>=7.0.0 <8.0.0'
   '@types/d3-scale': ^4.0.2
+  '@types/lodash': ^4.14.178
   '@types/luxon': ^2.0.8
   '@types/node': 17.0.2
   '@types/react': 17.0.37
@@ -30,6 +31,7 @@ dependencies:
 
 devDependencies:
   '@types/d3-scale': 4.0.2
+  '@types/lodash': 4.14.178
   '@types/luxon': 2.0.8
   '@types/node': 17.0.2
   '@types/react': 17.0.37
@@ -526,6 +528,10 @@ packages:
 
   /@types/json5/0.0.29:
     resolution: {integrity: sha1-7ihweulOEdK4J7y+UnC86n8+ce4=}
+    dev: true
+
+  /@types/lodash/4.14.178:
+    resolution: {integrity: sha512-0d5Wd09ItQWH1qFbEyQ7oTQ3GZrMfth5JkbN3EvTKLXcHLRDSXeLnlvlOn0wvxVIwK5o2M8JzP/OWz7T3NRsbw==}
     dev: true
 
   /@types/luxon/2.0.8:
