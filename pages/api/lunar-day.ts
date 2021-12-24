@@ -1,6 +1,7 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
 import { DateTime } from 'luxon'
 import { calculateMoonDayFor } from './legacy/moon-calc'
+import fs from 'fs'
 
 type Request = NextApiRequest & {
   query: {
@@ -32,6 +33,9 @@ export default function handler(req: Request, res: NextApiResponse<Data>) {
     })
     return
   }
+
+  fs.writeFileSync('/tmp/lunar-day.json', JSON.stringify(lunarDay, null, 2))
+  console.log('file written')
 
   res.status(200).json({
     dayNumber: lunarDay.dayNumber,
